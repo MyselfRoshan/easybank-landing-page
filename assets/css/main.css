@@ -166,6 +166,18 @@ h6 {
   box-shadow: 0 50px 100px hsla(0, 0%, 0%, 0.0875);
 }
 
+/* .hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+} */
+
 .open {
   top: 100px !important;
   transition: all 300ms ease-out;
@@ -207,7 +219,17 @@ h6 {
   }
 
   @media (width > 768px) {
-    display: none !important;
+    /* display: none !important; */
+    position: absolute;
+    top: -1000px;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }
 
@@ -219,15 +241,25 @@ h6 {
 
   padding-block: 1.71875rem;
   max-width: 1110px;
-  /* padding: ; */
   margin-inline: auto;
 
   @media (width < 1200px) {
     padding-inline: 2rem;
   }
+
   @media (width <= 768px) {
     &.desktop {
-      display: none !important;
+      position: absolute;
+      top: -1000px;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+      /* display: none !important; */
     }
   }
 
@@ -289,7 +321,7 @@ h6 {
   border-radius: 100px;
   background-image: var(--gradient);
   color: var(--white);
-  max-width: 10rem;
+  /* max-width: 10rem; */
 
   transition: background-color;
 
@@ -300,28 +332,46 @@ h6 {
 
 /* Hero Section */
 .hero-section {
-  margin-top: 100px;
+  margin-top: 75px;
+  @media (width>768px) {
+    margin-top: 100px;
+  }
   background-color: var(--very-light-gray);
-  /* overflow-x: hidden; */
   overflow-x: clip;
   overflow-y: visible;
 
   .background {
-    position: relative;
-    max-width: 1536px;
-    margin: auto;
-    /* height: 100%; */
-    background-image: url("/assets/images/bg-intro-desktop.svg");
+    background-image: url("/assets/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 40rem center;
-    background-size: cover;
+    background-size: contain;
+    @media (width > 600px) {
+      position: relative;
+      max-width: 1536px;
+      margin: auto;
+      background-image: url("/assets/images/bg-intro-desktop.svg");
+      background-position: 40rem center;
+      background-size: cover;
+    }
   }
+
   .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column-reverse;
+    @media (width > 600px) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 }
 
+.hero-img {
+  /* position: absolute; */
+  /* height: 423px; */
+  @media (width > 600px) {
+    right: -7.5rem;
+    top: -7.5rem;
+  }
+}
 .services,
 .articles {
   display: grid;
@@ -334,17 +384,12 @@ h1 {
   font-weight: var(--fw-300);
 }
 
-.hero-section .hero-text {
+.hero-section .hero-content {
   grid-column: span 6;
   padding-block: 1rem;
   display: grid;
   gap: 2rem;
-}
-
-.hero-img {
-  position: absolute;
-  right: -7.5rem;
-  top: -7.5rem;
+  justify-items: start;
 }
 
 .hero-section .description {
