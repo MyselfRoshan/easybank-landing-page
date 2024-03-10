@@ -35,16 +35,7 @@
   --fw-700: 700;
 
   /* Font sizes */
-  /* --fs-700: 2.25rem;
-  --fs-600: 2.5rem;
-  --fs-500: 0.875rem;
-  --fs-400: 0.75rem;
-  --fs-300: 1rem;
-  --fs-250: 0.96875rem;
-  --fs-200: 0.875rem;
-  --fs-100: 0.75rem; */
 
-  /* @media (width>768px) { */
   --fs-700: 3.5rem;
   --fs-650: 2.75rem;
   --fs-600: 2.5rem;
@@ -56,7 +47,6 @@
   --fs-250: 0.96875rem;
   --fs-200: 0.875rem;
   --fs-100: 0.75rem;
-  /* } */
 
   @media (width>1280px) {
     --fs-400: 1rem;
@@ -204,18 +194,6 @@ h6 {
   box-shadow: 0 50px 100px hsla(0, 0%, 0%, 0.0875);
 }
 
-/* .hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-} */
-
 .open {
   top: 100px !important;
   transition: all 300ms ease-out;
@@ -257,7 +235,6 @@ h6 {
   }
 
   @media (width > 768px) {
-    /* display: none !important; */
     position: absolute;
     top: -1000px;
     width: 1px;
@@ -297,7 +274,6 @@ h6 {
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border-width: 0;
-      /* display: none !important; */
     }
   }
 
@@ -359,7 +335,6 @@ h6 {
   border-radius: 100px;
   background-image: var(--gradient);
   color: var(--white);
-  /* max-width: 10rem; */
 
   transition: background-color;
 
@@ -407,7 +382,6 @@ h6 {
 }
 
 .hero-img {
-  /* aspect-ratio: 15/29/42; */
   @media (width > 600px) {
     width: 580px;
     position: relative;
@@ -444,7 +418,6 @@ h1 {
 
 .hero-section .hero-content {
   display: grid;
-  /* padding-block: 1rem; */
   gap: 2rem;
   justify-items: center;
   align-items: center;
@@ -468,12 +441,6 @@ h1 {
     font-size: var(--fs-300);
   }
 }
-
-/* .description {
-  @media (width <=768px) {
-    font-size: var(--fs-200);
-  }
-} */
 
 /* Services Section */
 h2 {
