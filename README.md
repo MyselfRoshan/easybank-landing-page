@@ -4,4 +4,4 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ## Links
 
-[Solution URL](https://github.com/MyselfRoshan/easybank-landing-page) | [Live Site URL](https://github.com/MyselfRoshan/easybank-landing-page)
+[Solution URL](https://github.com/MyselfRoshan/easybank-landing-page) | [Live Site URL](https://easybank-landing-page-weld-nu.vercel.app/) 
