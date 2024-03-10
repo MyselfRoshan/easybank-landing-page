@@ -4,4 +4,4 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ## Links
 
-[Solution URL](https://github.com/MyselfRoshan/easybank-landing-page) | [Live Site URL](https://github.com/MyselfRoshan/easybank-landing-page)
+[Solution URL](https://github.com/MyselfRoshan/easybank-landing-page){:target="\_blank"} | [Live Site URL](https://github.com/MyselfRoshan/easybank-landing-page){:target="\_blank"}
